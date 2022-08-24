@@ -35,7 +35,7 @@ const Inicio = () => {
             </Card></Link>
         </Grid>
         <Grid xs={12} md={6}>
-          <Link to="/peliculas">
+          <Link to="/movies">
             <Card isPressable>
               <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
                 <Col>
@@ -44,7 +44,7 @@ const Inicio = () => {
                     color="white"
                     style={{ textAlign: "center", margin: "120px" }}
                   >
-                    Peliculas
+                    Movies
                   </Text>
                 </Col>
               </Card.Header>

@@ -1,13 +1,13 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const Peliculas = () => {
+const Movies = () => {
   return (
     <div>
       <Link to="/">HOME</Link>
-      <h1>PELICULAS</h1>
+      <h1>MOVIES</h1>
     </div>
   )
 }
 
-export default Peliculas
+export default Movies
