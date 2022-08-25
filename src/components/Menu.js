@@ -2,7 +2,6 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Badge from 'react-bootstrap/Badge';
-import Footer from './Footer';
 
 const Menu = () => {
   return (
@@ -21,7 +20,6 @@ const Menu = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Footer />
     </div>
   )
 }

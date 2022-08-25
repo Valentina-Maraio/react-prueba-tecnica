@@ -15,10 +15,10 @@ const Serie = () => {
           <Card isPressable>
             <Card.Body css={{ p: 0 }}>
               <Card.Image
-                src={entry.images["Poster Art"].url}
+                src={entry.images["Poster Art"].url && 'programType' == 'series'}
                 objectFit="cover"
                 width="100%"
-                height={140}
+                height={'auto'}
                 alt={entry.title}
               />
             </Card.Body>
