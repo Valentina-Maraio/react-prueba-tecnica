@@ -4,18 +4,19 @@ import { Card, Grid, Row, Text } from "@nextui-org/react";
 
 //src={entry.images["Poster Art"].url}
 // && 'releaseYear' >= '2010'
+//slice(0,size)
 
 const Serie = () => {
-  const size = 20;
+  //const size = 20;
 
   return (
     <Grid.Container gap={2} justify="flex-start">
-      {entries?.entries.slice(0,size).map(entry =>
+      {entries?.entries.map(entry =>
         <Grid xs={6} sm={3}>
           <Card isPressable>
             <Card.Body css={{ p: 0 }}>
               <Card.Image
-                src={entry.images["Poster Art"].url && 'programType' == 'series'}
+                src={entry.images["Poster Art"].url && 'programType' == 'series' }
                 objectFit="cover"
                 width="100%"
                 height={'auto'}
