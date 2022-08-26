@@ -11,7 +11,7 @@ const Movie = () => {
           <Card isPressable>
             <Card.Body css={{ p: 0 }}>
               <Card.Image
-                src={entry.images["Poster Art"].url && 'programType' === 'movie'}
+                src={entry.images["Poster Art"].url}
                 objectFit="cover"
                 width="100%"
                 height={'auto'}

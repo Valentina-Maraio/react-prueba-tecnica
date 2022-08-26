@@ -1,5 +1,6 @@
 import React from 'react'
 import HeaderTitle from '../components/HeaderTitle'
+//import Pagination from '../pages/Results/Pagination'
 import { Link } from 'react-router-dom'
 
 import { Grid, Card, Col, Text } from "@nextui-org/react";
@@ -65,3 +66,7 @@ const Inicio = () => {
 }
 
 export default Inicio
+
+/*
+      
+*/
