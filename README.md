@@ -84,7 +84,7 @@ También necesitará manejar los estados de carga/loading y error de obtener los
 
 - Filtro por año
   - agregar arriba del listado de series/películas un input que permita filtrar películas por año.
-- Paginación
+  - Paginación
   - agregar un selector de cantidad de resultados a mostrar (5, 10, 20)
   - permitir ir a próxima página de resultados o página anterior
   - permitir moverse de página en página utilizando un parámetro en la URL
