@@ -35,10 +35,11 @@ function MyVerticallyCenteredModal(props) {
 const Movie = () => {
 
   const [modalShow, setModalShow] = React.useState(false);
+  const size = 20;
 
   return (
     <Grid.Container gap={2} justify="flex-start">
-      {entries?.entries.filter(movie => movie.programType === 'movie').map(entry =>
+      {entries?.entries.sort((a, b) => a.title.localeCompare(b.title)).filter(movie => movie.programType === 'movie' && movie.releaseYear >= '2010').slice(0, size).map(entry =>
         <Grid xs={6} sm={3}>
           <Card
             onClick={() => setModalShow(true)}
