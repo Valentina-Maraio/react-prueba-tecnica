@@ -6,7 +6,7 @@ const HeaderSeries = () => {
   return (
     <Navbar bg="light">
     <Container>
-      <Navbar.Brand>Popular Movies</Navbar.Brand>
+      <Navbar.Brand>Popular Series</Navbar.Brand>
     </Container>
   </Navbar>
   )
