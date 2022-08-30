@@ -1,10 +1,11 @@
 import React from 'react'
 import entries from '../../data/sample.json'
 import { Card, Grid, Row, Text } from "@nextui-org/react";
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+//import Button from 'react-bootstrap/Button';
+//import Modal from 'react-bootstrap/Modal';
+import ModalNew from './Modal';
 
-function MyVerticallyCenteredModal(props) {
+/*function MyVerticallyCenteredModal(props) {
   return (
     <Modal
       {...props}
@@ -30,10 +31,23 @@ function MyVerticallyCenteredModal(props) {
       </Modal.Footer>
     </Modal>
   );
-}
+}*/
 
 const Serie = () => {
-  const [modalShow, setModalShow] = React.useState(false);
+  const modalData = { entries };
+  const [modalIsOpen, setModalIsOpen] = React.useState(false);
+
+  function openFromParent() { setModalIsOpen(true) };
+  function handleCloseModal(event, data) {
+    console.log(event, data);
+    setModalIsOpen(false);
+  }
+  function handleAfterOpen(event, data) {
+    console.log(event, data);
+  };
+
+
+  //const [modalShow, setModalShow] = React.useState(false);
   const size = 20;
 
   return (
@@ -41,7 +55,7 @@ const Serie = () => {
       {entries?.entries.sort((a, b) => a.title.localeCompare(b.title)).filter(serie => serie.programType === 'series' && serie.releaseYear >= '2010').slice(0, size).map(entry =>
         <Grid xs={6} sm={3}>
           <Card
-            onClick={() => setModalShow(true)}
+            onClick={openFromParent}
             key={entry.id}
             isPressable>
             <Card.Body css={{ p: 0 }}>
@@ -62,9 +76,11 @@ const Serie = () => {
               </Row>
             </Card.Footer>
           </Card>
-          <MyVerticallyCenteredModal
-            show={modalShow}
-            onHide={() => setModalShow(false)}
+          <ModalNew
+            dynData={modalData}
+            IsModalOpened={modalIsOpen}
+            onCloseModal={handleCloseModal}
+            onAfterOpen={handleAfterOpen}
           />
         </Grid>
       )}
