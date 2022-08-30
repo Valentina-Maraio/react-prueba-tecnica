@@ -28,7 +28,7 @@ const Inicio = () => {
                 src={logo}
                 objectFit="cover"
                 width="100%"
-                height={300}
+                height={250}
                 alt="Card image background"
                 style={{ backgroundColor: "black" }}
               />
@@ -52,7 +52,7 @@ const Inicio = () => {
                 src={logo}
                 objectFit="cover"
                 width="100%"
-                height={300}
+                height={250}
                 alt="Card image background"
                 style={{ backgroundColor: "black" }}
               />

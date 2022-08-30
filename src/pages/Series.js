@@ -1,12 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Serie from './Results/Serie'
+import HeaderSeries from '../components/HeaderSeries'
 
 const Series = () => {
   return (
     <div>
-      <Link to="/">HOME</Link>
-      <h1>SERIES</h1>
+      <HeaderSeries />
       <Serie />
     </div>
   )

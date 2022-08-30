@@ -6,6 +6,7 @@ import Movies from '../pages/Movies';
 import Login from '../pages/Login';
 import FreeTrial from '../pages/FreeTrial'
 import Menu from './Menu';
+import Footer from './Footer';
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
                     <Route path="/freetrial" element={<FreeTrial />}></Route>
                 </Routes>
             </Router>
+            <Footer />
         </div>
     )
 }

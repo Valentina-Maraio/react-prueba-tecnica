@@ -10,9 +10,6 @@ export default function ModalDetails(props) {
     if (props.visible) { return null }
     return (
         <div>
-            <Button auto flat color="error" onClick={handler}>
-                Open modal
-            </Button>
             <Modal blur noPadding open={visible} onClose={closeHandler}>
                 <Modal.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
                     <Col>
@@ -48,7 +45,7 @@ export default function ModalDetails(props) {
                     >
                         <Row>
                             <Col>
-                            <Text color="#000" size={30}>{props.title}</Text>
+                                <Text color="#000" size={30}>{props.title}</Text>
                                 <Text color="#000" size={12}>
                                     {props.info}
                                 </Text>
@@ -57,6 +54,9 @@ export default function ModalDetails(props) {
                     </Card.Footer>
                 </Modal.Body>
             </Modal>
+            <Button size="xs" auto flat color="gray" onClick={handler}>
+                Info
+            </Button>
         </div>
     );
 }

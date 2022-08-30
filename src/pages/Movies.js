@@ -1,13 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Movie from './Results/Movie'
+import HeaderMovies from '../components/HeaderMovies'
 
 const Movies = () => {
 
   return (
     <div>
-      <Link to="/">HOME</Link>
-      <h1>MOVIES</h1>
+      <HeaderMovies />
       <Movie />
     </div>
   )
